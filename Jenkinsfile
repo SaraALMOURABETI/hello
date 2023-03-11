@@ -27,8 +27,8 @@ pipeline {
             steps {
                 git branch: 'python', url: 'https://github.com/SaraALMOURABETI/JenPython.git'
                 bat 'choco install python'
-                bat label: '', script: 'py hello.py'
-                //sh 'python3 hello.py'
+                //bat label: '', script: 'py hello.py'
+                sh 'hello.py'
             }
         }
         
